@@ -1,7 +1,11 @@
 #Budget tracker
-def savings(income,costs):
-    income= input ("What is your income?").lower()
+def savings(income, costs):
+    return
 
-for cost in costs:
-
+income= input("What is your monthly income?")
+if income==ValueError:
+    print("please enter a valid answer ")
+costs = []
+while True:
+    costs= input("What is your average costs per month?")
 
