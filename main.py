@@ -1,4 +1,5 @@
 #Budget tracker
+
 def savings(income, costs):
     return income - costs
 
@@ -10,6 +11,7 @@ while True:
     rent= int(input("How much is your rent this month? "))
     utillies= int(input("How much are your utillies this month? "))
     grocery= int(input("What is your average grocery costs per month? "))
+    break
     
 for cost in [rent, utillies, grocery]:
     if cost < 0:
@@ -18,24 +20,11 @@ for cost in [rent, utillies, grocery]:
     
 
 #Add costs together
+monthly_costs = [rent, utillies, grocery]
 total = rent + utillies + grocery
-monthly_costs= rent + utillies + grocery
-print(f"Your monthly costs is", {total})
-if monthly_costs >0:
-    def subtract(income, monthly_costs):
-        discretionary_income = income - monthly_costs
-        print(discretionary_income)
-else:
-    print("Try again")
+print(f"Your monthly costs are" ,total,"dollars")
 
-# #Subtract costs from income
-# def subtract (income, monthly_costs):
-#     discretionary_income = income - monthly_costs
-#     discretionary_income
+#Subtract costs from income
 
-
-
-
-
-# Updated_list = {rent, utillies*, miscellaneous**}
-# print(Updated_list(rent, utillies, miscellaneous))
+balence_remaining= int(income)-total
+print(f"You have a remaining balence of",balence_remaining,"dollars,this month!")
